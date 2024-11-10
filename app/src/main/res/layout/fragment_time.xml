@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/etCodigoTime"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Código"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <EditText
+        android:id="@+id/etNomeTime"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:hint="Nome do Time"
+        app:layout_constraintTop_toBottomOf="@id/etCodigoTime"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <EditText
+        android:id="@+id/etCidadeTime"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:hint="Cidade"
+        app:layout_constraintTop_toBottomOf="@id/etNomeTime"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/btnInsertTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Inserir"
+        app:layout_constraintTop_toBottomOf="@id/etCidadeTime"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnUpdateTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Atualizar"
+        app:layout_constraintTop_toBottomOf="@id/btnInsertTime"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnDeleteTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Deletar"
+        app:layout_constraintTop_toBottomOf="@id/btnUpdateTime"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnFindOneTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Buscar Um"
+        app:layout_constraintTop_toBottomOf="@id/btnDeleteTime"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnListAllTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Listar Todos"
+        app:layout_constraintTop_toBottomOf="@id/btnFindOneTime"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tvResultadoTime"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scrollbars="vertical"
+        android:text="Resultado"
+        app:layout_constraintTop_toBottomOf="@id/btnListAllTime"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

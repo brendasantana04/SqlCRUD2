@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/etIdJogador"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="ID"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <EditText
+        android:id="@+id/etNomeJogador"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:hint="Nome"
+        app:layout_constraintTop_toBottomOf="@id/etIdJogador"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <EditText
+        android:id="@+id/etDataNascJogador"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:hint="Data de Nascimento (AAAA-MM-DD)"
+        app:layout_constraintTop_toBottomOf="@id/etNomeJogador"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <EditText
+        android:id="@+id/etAlturaJogador"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:hint="Altura (m)"
+        app:layout_constraintTop_toBottomOf="@id/etDataNascJogador"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <EditText
+        android:id="@+id/etPesoJogador"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:hint="Peso (kg)"
+        app:layout_constraintTop_toBottomOf="@id/etAlturaJogador"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <EditText
+        android:id="@+id/etTimeJogador"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:hint="Código do Time"
+        app:layout_constraintTop_toBottomOf="@id/etPesoJogador"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Botões para cada operação CRUD -->
+    <Button
+        android:id="@+id/btnInsertJogador"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Inserir"
+        app:layout_constraintTop_toBottomOf="@id/etTimeJogador"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnUpdateJogador"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Atualizar"
+        app:layout_constraintTop_toBottomOf="@id/btnInsertJogador"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnDeleteJogador"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Deletar"
+        app:layout_constraintTop_toBottomOf="@id/btnUpdateJogador"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnFindOneJogador"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Buscar Um"
+        app:layout_constraintTop_toBottomOf="@id/btnDeleteJogador"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnListAllJogador"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Listar Todos"
+        app:layout_constraintTop_toBottomOf="@id/btnFindOneJogador"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tvResultadoJogador"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scrollbars="vertical"
+        android:text="Resultado"
+        app:layout_constraintTop_toBottomOf="@id/btnListAllJogador"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
