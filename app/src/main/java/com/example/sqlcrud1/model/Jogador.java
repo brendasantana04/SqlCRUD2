@@ -2,6 +2,11 @@ package com.example.sqlcrud1.model;
 
 import java.time.LocalDate;
 
+/*
+ *@author:<Brenda>
+ *@ra:<1110482313042>
+ */
+
 public class Jogador {
     private int id;
     private String nome;

@@ -1,9 +1,15 @@
 package com.example.sqlcrud1.model;
 
+/*
+ *@author:<Brenda>
+ *@ra:<1110482313042>
+ */
+
 public class Time {
     private int codigo;
     private String nome;
     private String cidade;
+
 
     public Time() {}
 

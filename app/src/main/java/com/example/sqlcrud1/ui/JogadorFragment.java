@@ -17,6 +17,11 @@ import java.sql.SQLException;
 import java.time.LocalDate;
 import java.util.List;
 
+/*
+ *@author:<Brenda>
+ *@ra:<1110482313042>
+ */
+
 public class JogadorFragment extends Fragment {
 
     private EditText etIdJogador, etNomeJogador, etDataNascJogador, etAlturaJogador, etPesoJogador, etTimeJogador;

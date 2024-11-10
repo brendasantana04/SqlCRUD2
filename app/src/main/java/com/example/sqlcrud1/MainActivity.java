@@ -8,6 +8,11 @@ import com.example.sqlcrud1.ui.TimeFragment;
 
 import com.google.android.material.appbar.MaterialToolbar;
 
+/*
+ *@author:<Brenda>
+ *@ra:<1110482313042>
+ */
+
 public class MainActivity extends AppCompatActivity {
 
     @Override
