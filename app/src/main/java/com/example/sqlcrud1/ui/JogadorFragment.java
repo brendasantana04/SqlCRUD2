@@ -9,7 +9,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 import androidx.fragment.app.Fragment;
 import com.example.sqlcrud1.R;
-import com.example.sqlcrud1.controller.ICRUDDao;
+import com.example.sqlcrud1.dao.ICRUDDao;
 import com.example.sqlcrud1.model.Jogador;
 import com.example.sqlcrud1.model.Time;
 
@@ -29,6 +29,10 @@ public class JogadorFragment extends Fragment {
     private ICRUDDao<Jogador> jogadorDao;  // Aqui você passará a implementação de ICRUDDao
 
     public JogadorFragment() {}
+
+    public JogadorFragment(ICRUDDao<Jogador> jogadorDao) {
+        this.jogadorDao = jogadorDao;
+    }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
@@ -60,7 +64,7 @@ public class JogadorFragment extends Fragment {
     private void insertJogador() {
         Jogador jogador = new Jogador();
         jogador.setNome(etNomeJogador.getText().toString());
-        jogador.setDataNasc(LocalDate.parse(etDataNascJogador.getText().toString()));
+        jogador.setDataNasc(LocalDate.parse(etDataNascJogador.getText().toString())); // Converte de String para LocalDate
         jogador.setAltura(Float.parseFloat(etAlturaJogador.getText().toString()));
         jogador.setPeso(Float.parseFloat(etPesoJogador.getText().toString()));
 

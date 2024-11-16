@@ -9,7 +9,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 import androidx.fragment.app.Fragment;
 import com.example.sqlcrud1.R;
-import com.example.sqlcrud1.controller.ICRUDDao;
+import com.example.sqlcrud1.dao.ICRUDDao;
 import com.example.sqlcrud1.model.Time;
 
 import java.sql.SQLException;
@@ -27,6 +27,10 @@ public class TimeFragment extends Fragment {
     private ICRUDDao<Time> timeDao;
 
     public TimeFragment() {}
+
+    public TimeFragment(ICRUDDao<Time> timeDao) {
+        this.timeDao = timeDao;
+    }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {

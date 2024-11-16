@@ -11,8 +11,12 @@ public class Time {
     private String cidade;
 
 
-    public Time() {}
+    public Time() {
+    }
 
+    public Time(int codigo) {
+        this.codigo = codigo;
+    }
     public int getCodigo() {
         return codigo;
     }

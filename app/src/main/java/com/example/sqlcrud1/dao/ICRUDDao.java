@@ -1,4 +1,4 @@
-package com.example.sqlcrud1.controller;
+package com.example.sqlcrud1.dao;
 
 import java.sql.SQLException;
 import java.util.List;
