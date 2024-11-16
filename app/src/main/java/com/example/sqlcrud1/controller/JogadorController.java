@@ -9,6 +9,11 @@ import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.util.List;
 
+/*
+ *@author:<Brenda>
+ *@ra:<1110482313042>
+ */
+
 public class JogadorController {
     private JogadorDAO jogadorDAO;
 

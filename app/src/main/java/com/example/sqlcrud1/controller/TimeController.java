@@ -6,6 +6,11 @@ import com.example.sqlcrud1.model.Time;
 import java.sql.SQLException;
 import java.util.List;
 
+/*
+ *@author:<Brenda>
+ *@ra:<1110482313042>
+ */
+
 public class TimeController {
     private TimeDAO timeDAO;
 

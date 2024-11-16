@@ -10,6 +10,11 @@ import com.example.sqlcrud1.model.Time;
 import java.util.ArrayList;
 import java.util.List;
 
+/*
+ *@author:<Brenda>
+ *@ra:<1110482313042>
+ */
+
 public class TimeDAO implements ICRUDDao<Time> {
     private SQLiteDatabase db;
     private SQLiteHelper dbHelper;

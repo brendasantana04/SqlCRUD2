@@ -15,6 +15,11 @@ import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.List;
 
+/*
+ *@author:<Brenda>
+ *@ra:<1110482313042>
+ */
+
 public class JogadorDAO implements ICRUDDao<Jogador> {
     private SQLiteDatabase db;
     private SQLiteHelper dbHelper;
